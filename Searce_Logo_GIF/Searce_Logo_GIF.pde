@@ -58,7 +58,7 @@ void setup() {
   size(300,150);
   background(0);
   //UNCOMMENT THIS TO ENable new copy
-  gifExport = new GifMaker(this, "Searce_Logo_GIF_Final.gif");
+  gifExport = new GifMaker(this, "Searce_Logo_GIF_Final_Modified.gif");
     gifExport.setRepeat(0);        // make it an "endless" animation
     //gifExport.setTransparent(0,0,0);  // black is transparent
   img=loadImage("SearceLogo2.png");
@@ -112,9 +112,11 @@ void draw() {
    }
    if(interval>20 && interval<41){
      fill(210,30,30,255);
-     ellipse(90+(interval-40)*4,182-(interval-40),45+aaa,45+aaa);
+     //ellipse(90+(interval-40)*4,182-(interval-40),45+aaa,45+aaa);
+     ellipse(90,182,interval*45/40+aaa,interval*45/40+aaa);
      fill(255);
-     ellipse(94+(interval-40)*4,182-(interval-40),32+aaa,32+aaa);
+    // ellipse(94+(interval-40)*4,182-(interval-40),32+aaa,32+aaa);
+     ellipse(94,182,(interval*32)/40+aaa,(interval*32)/40+aaa);
    }
    if(interval>40){
       fill(210,30,30,255);
@@ -137,9 +139,11 @@ void draw() {
     }
     if(interval>100 && interval<121){
       fill(160,200,60,255);
-    ellipse(158-(interval-120)*5,225-(interval-120)*4,26+iii,26+iii);
+   // ellipse(158-(interval-120)*5,225-(interval-120)*4,26+iii,26+iii);
+   ellipse(158,225,interval*26/120+iii,interval*26/120+iii);
     fill(255);
-    ellipse(157-(interval-120)*5,222-(interval-120)*4,16+iii,16+iii);
+   // ellipse(157-(interval-120)*5,222-(interval-120)*4,16+iii,16+iii);
+   ellipse(157,222,interval*16/120+iii,interval*16/120+iii);
     }
     if(interval>120){
       fill(160,200,60,255);
